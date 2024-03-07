@@ -5,8 +5,8 @@
     "description": "",
     "exports": {
         ".": {
-            "types": "./dist/types/main.d.ts",
-            "default": "./dist/supervisor.esm.js"
+            "types": "./build/types/main.d.ts",
+            "default": "./build/supervisor.esm.js"
         }
     },
     "author": "Aaron Lockhart <aaronlockhartdev@gmail.com>",
