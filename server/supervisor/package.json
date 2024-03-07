@@ -1,0 +1,31 @@
+{
+    "name": "supervisor",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "",
+    "exports": {
+        ".": {
+            "types": "./dist/types/main.d.ts",
+            "default": "./dist/supervisor.esm.js"
+        }
+    },
+    "author": "Aaron Lockhart <aaronlockhartdev@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@rollup/plugin-typescript": "^11.1.6",
+        "@types/ws": "^8.5.10",
+        "rollup": "^4.12.1",
+        "tslib": "^2.6.2",
+        "typescript": "^5.4.2"
+    },
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w"
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "ws": "^8.16.0"
+    }
+}
