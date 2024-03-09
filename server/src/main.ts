@@ -1,8 +1,8 @@
 import { createServer } from 'http';
 import polka from 'polka';
 
-import { handler } from './build/handler.js';
-import { WorkerHandler } from 'supervisor';
+import { handler } from '@encodarr/svelte/handler';
+import { WorkerHandler } from '@encodarr/supervisor';
 
 const server = createServer();
 

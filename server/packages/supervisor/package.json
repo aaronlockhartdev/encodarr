@@ -1,27 +1,23 @@
 {
-    "name": "encodarr",
+    "name": "@encodarr/supervisor",
     "version": "1.0.0",
+    "private": true,
     "type": "module",
     "exports": {
         ".": "./build/main.esm.js"
     },
-    "author": "Aaron Lockhart",
-    "license": "MIT",
     "scripts": {
-        "build": "npm run build -ws && rm -rf ./build/* && rollup -c"
+        "build": "rm -rf ./build/* && rollup -c"
     },
-    "workspaces": [
-        "./packages/*"
-    ],
     "devDependencies": {
-        "@rollup/plugin-commonjs": "^25.0.7",
         "@rollup/plugin-node-resolve": "^15.2.3",
         "@rollup/plugin-terser": "^0.4.4",
         "@rollup/plugin-typescript": "^11.1.6",
+        "@types/ws": "^8.5.10",
         "rollup": "^4.12.1",
         "typescript": "^5.4.2"
     },
     "dependencies": {
-        "polka": "^0.5.2"
+        "ws": "^8.16.0"
     }
 }

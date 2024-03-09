@@ -1,14 +1,15 @@
 {
     "compilerOptions": {
         "target": "esnext",
-        "module": "nodenext",
+        "module": "esnext",
+        "declaration": true,
         "strict": true,
-        "moduleResolution": "nodenext",
+        "moduleResolution": "node",
         "esModuleInterop": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
-        "allowSyntheticDefaultImports": true,
-        "allowJs": true
+        "rootDir": "./src",
+        "outDir": "./build"
     },
     "include": [ "src" ]
 }

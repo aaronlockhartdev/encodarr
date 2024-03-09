@@ -2,6 +2,7 @@ version: '3.9'
 
 services:
   server:
+    container_name: 'encodarr-server'
     build: server
     ports:
       - 80:3000
