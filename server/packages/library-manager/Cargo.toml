@@ -1,0 +1,10 @@
+[package]
+name = "library-manager"
+exclude = ["index.node"]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+neon = {version = "^1", features = ["napi-8"]}

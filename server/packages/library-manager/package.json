@@ -1,0 +1,16 @@
+{
+    "name": "@encodarr/library-manager",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "exports": {
+        ".": "index.node"
+    },
+    "scripts": {
+        "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
+        "test": "cargo test"
+    },
+    "devDependencies": {
+        "cargo-cp-artifact": "^0.1"
+    }
+}

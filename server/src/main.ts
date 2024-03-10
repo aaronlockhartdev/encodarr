@@ -1,12 +1,12 @@
 import { createServer } from 'http';
 import polka from 'polka';
 
-import { handler } from '@encodarr/svelte/handler';
-import { WorkerHandler } from '@encodarr/supervisor';
+import { handler } from '@encodarr/user-interface';
+import { WorkerSupervisor } from '@encodarr/worker-supervisor';
 
 const server = createServer();
 
-WorkerHandler.register(server);
+WorkerSupervisor.attach(server);
 
 const port = process.env.PORT ?? 3000;
 
